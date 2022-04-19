@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+//vector<kieu du lieu> ten_vector;
+//size(): tra ve kich thuoc vector
+//push_back(x): day phan tu x vao cuoi vector
+//pop_back(): xoa phan tu o cuoi vector
+//erase
+//to_tring: bien doi 1 day so thanh 1day chu
+//stoi(): chuyen 1 xau ki tu ve so int
+//stoll(): chuyen 1 xau ki tu ve so long long
+int main(){
+    vector<int> a;
+    a.push_back(100);
+    a.push_back(200);
+    a.push_back(300);
+    cout << a[1] << endl;
+    cout << a.size() << endl;
+    a.pop_back();
+    cout << a.size() << endl;
+    for(int i = 0; i<a.size(); i++){
+        cout << a[i] << " ";
+    }
+    for(auto x : a){
+        cout << x << " ";
+    }
+    // iterator
+    vector<int>::iterator it;
+    for(it = a.begin(); it != a.end(); ++it){
+        cout << *it << endl;
+    }
+    return 0;
+}
